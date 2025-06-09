@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{csquotes}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{lmodern}
+
+% Radbrytbara URL:er i fotnoter och text
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue,
+  pdfborder={0 0 0}
+}
+
+\usepackage[most]{tcolorbox}
+
+% För att göra URL:er mindre och radbrytbara i fotnoter
+\usepackage{footmisc}
+\renewcommand*{\UrlFont}{\ttfamily\footnotesize}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{
+  \do\.\do\-\do\_\do\/\do\?\do\&\do\=\do\%
+}
+\makeatother
+
+% Egna kommandon för juridiska lagrum
+\newcommand{\lagrum}[1]{\par\vspace{3mm}\textit{#1}\par\vspace{5mm}}
+\newcommand{\lagrumsinline}[1]{\textit{#1}}
+
+\newcommand{\utlandslagrum}[3]{%
+  \vspace{3mm}%
+  \noindent\textit{#1}\footnote{\url{#2}#3}\\[0.5ex]
+}
+
+\title{\textbf{Konstitutionell anklagelse mot Sveriges regering:\\
+Brott mot folkrätt och grundlag i hanteringen av Israels krigsförbrytelser}}
+
+% Författare kan läggas till här vid behov
+% \author{Lasse Karagiannis}
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\vspace{1cm}
+
+\section{Syfte och adressater}
+\label{sec:syfte}
+
+% Detta inledande avsnitt introducerar adressaterna och det konstitutionella syftet.
+
+Detta dokument är en formell framställan riktad till:
+
+\begin{itemize}
+  \item Justitiedepartementet och justitieministern,
+  \item Utrikesdepartementet och utrikesministern,
+  \item Statsrådsberedningen, såsom samordnande instans för regeringens politik,
+  \item Justitieombudsmannen (JO),
+  \item Konstitutionsutskottet (KU),
+  \item Högsta domstolen (HD).
+\end{itemize}
+
+\begin{spacing}{1.2}
+Syftet är att formellt uppmärksamma och rättsligt analysera den svenska regeringens agerande i relation till dess skyldigheter enligt:
+
+\begin{itemize}
+  \item \textit{Regeringsformen (RF) 1 kap. 10 § – om respekt för internationella åtaganden,}
+  \item \textit{FN-stadgan – särskilt artikel 2 om våldsförbud och artikel 1 om fredliga syften,}
+  \item \textit{Konventionen om förebyggande och bestraffning av brottet folkmord (1948).}
+\end{itemize}
+
+\vspace{0.5cm}
+\textit{
+Framställan aktualiserar frågan om statligt ansvar för passivitet och medverkan i folkrättsbrott – särskilt i ljuset av pågående brott mot mänskligheten i Gaza och regeringens val att avstå från tydlig rättslig och moralisk positionering.
+}
+
+\vspace{0.5cm}
+\textit{
+Eftersom Konstitutionsutskottets uppgift är att pröva huruvida regeringen eller enskilda statsråd har brutit mot grundlagen, och eftersom en sådan prövning ytterst kan kräva rättslig prövning av Högsta domstolen enligt 13 kap. 3 § regeringsformen, tillställs denna skrivelse även Högsta domstolen.
+}
+
+\vspace{0.5cm}
+\textit{
+Denna framställan bör därför behandlas som en konstitutionell angelägenhet av särskild vikt.
+}
+\end{spacing}
+
+\newpage
+\tableofcontents
+\newpage
+
+% Huvudsektionerna inkluderas här i önskad pedagogisk ordning
+
+\include{sections/anklagelse_section/anklagelse_main} % Huvudpåstående: att Sveriges regering är juridiskt ansvarig enligt folkrätt och grundlag
+
+\include{sections/israel_brott_section/israel_brott_main} % Bevisning om Israels folkrättsbrott och krigsförbrytelser
+
+\include{sections/folkratt_section/folkratt_main} % Genomgång av Sveriges folkrättsliga åtaganden och konventionsbundenhet
+
+\include{sections/regeringens_agerande_section/regeringens_agerande_main} % Beskrivning av regeringens faktiska agerande eller passivitet
+
+\include{sections/bevisning_folkmordsavsikt_section/bevisning_folkmordsavsikt_main} % Beviskedja för att folkmordsavsikt föreligger hos Israel – med fokus på intention
+
+\include{sections/hamas_section/hamas_main} % Analys av regeringens fokus på Hamas och kritik mot snedvriden ansvarsfördelning
+
+\include{sections/atgarder_section/atgarder_main} % Förslag på rättsliga, politiska och diplomatiska åtgärder Sverige borde vidta
+
+\include{sections/avslutning_section/avslutning_main} % Sammanfattning, slutsats, och begäran om rättslig prövning
+
+
+\end{document}
