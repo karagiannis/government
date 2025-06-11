@@ -7,6 +7,8 @@
 \usepackage{setspace}
 \usepackage{lmodern}
 \usepackage{comment}
+\usepackage{booktabs}
+
 
 
 % Radbrytbara URL:er i fotnoter och text
@@ -21,6 +23,14 @@
 }
 
 \usepackage[most]{tcolorbox}
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
 
 % För att göra URL:er mindre och radbrytbara i fotnoter
 \usepackage{footmisc}
@@ -50,7 +60,14 @@ Brott mot folkrätt och grundlag i hanteringen av Israels krigsförbrytelser}}
 \begin{document}
 \maketitle
 \thispagestyle{empty}
-\vspace{1cm}
+\vspace{1cm}\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
 
 \include{Syfte_och_adressater}
 
